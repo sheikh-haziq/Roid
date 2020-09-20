@@ -4,6 +4,11 @@ Roid is a page Router for DroidScript apps
 
 
 <center><img src="IMG_20200920_095602.jpg" width="100%" /></center>
+
+##Installation
+
+Download our [Roid.zip](https://github.com/sheikh-haziq/Roid/releases/tag/v1.0), extract it and install Roid.apk
+
 ## Usage
 
 ```javascript
