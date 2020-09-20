@@ -1,2 +1,42 @@
 # Roid
-Roid is a page Router for DroidScript apps.
+
+Roid is a page Router for DroidScript apps
+
+## Usage
+
+```javascript
+app.LoadPlugin('Roid');
+function OnStart(){
+    var Home = app.CreateLayout('Linear','Vertical');
+    var text1 = app.CreateText('Home Page');
+    Home.AddChild(text1);
+    var Login = app.CreateLayout('Linear','Vertical');
+    var text2 = app.CreateText('Login Page');
+    var btn = app.CreateButton('Next');
+    btn.SetOnTouch(()=>{
+        R.navigate('home');
+    });
+    Login.AddChild(text2);
+    Login.AddChild(btn);
+    var R = new Roid(
+    {
+        "home":Home,
+        "login":Login
+     }
+    );
+    R.navigate('login');
+}
+
+function OnBack(){
+    R.back();
+    return false
+}
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://github.com/sheikh-haziq/Roid/blob/master/LICENSE)
