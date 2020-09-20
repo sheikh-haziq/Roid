@@ -2,6 +2,8 @@
 
 Roid is a page Router for DroidScript apps
 
+
+<center><img src="IMG_20200920_095602.jpg" width="100%" /></center>
 ## Usage
 
 ```javascript
