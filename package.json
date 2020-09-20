@@ -1,0 +1,11 @@
+{
+ "name": "Roid",
+ "version": "1.0-alpha",
+ "description": "Page Router for DroidScript",
+ "keywords": [ "Roid", "Router", "DroidScript", "Plugin", "DroidScript Router", "DroidScript Plugin", "Roid.js"],
+ "author": {
+  "name": "Sheikh Haziq", 
+ },
+ "license": "MIT",
+"homepage":"https://github.com/sheikh-haziq/Roid"
+}
