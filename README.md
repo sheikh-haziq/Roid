@@ -1,2 +1,2 @@
 # Roid
-Rois is a page Router for DroidScript apps.
+Roid is a page Router for DroidScript apps.
