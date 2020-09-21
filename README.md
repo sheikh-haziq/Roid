@@ -13,29 +13,33 @@ Download our [Roid.zip](https://github.com/sheikh-haziq/Roid/releases/tag/v1.0),
 
 ```javascript
 app.LoadPlugin('Roid');
+app.LoadPlugin('Roid');
 function OnStart(){
-    var Home = app.CreateLayout('Linear','Vertical');
+    var Home = app.CreateLayout('Linear','VCenter,FILLXY');
+    Home.SetBackColor('#ffffff');
     var text1 = app.CreateText('Home Page');
     Home.AddChild(text1);
-    var Login = app.CreateLayout('Linear','Vertical');
+    var Login = app.CreateLayout('Linear','VCenter,FILLXY');
+    Login.SetBackColor('#ffffff');
     var text2 = app.CreateText('Login Page');
     var btn = app.CreateButton('Next');
     btn.SetOnTouch(()=>{
-        R.navigate('home');
+        app.Roid.navigate('login');
     });
     Login.AddChild(text2);
-    Login.AddChild(btn);
-    var R = new Roid(
+    Home.AddChild(btn);
+    
+    app.Roid = new Roid(
     {
         "home":Home,
         "login":Login
      }
     );
-    R.navigate('login');
+    app.Roid.navigate('home');
 }
 
 function OnBack(){
-    R.back();
+    app.Roid.back();
     return false
 }
 ```
