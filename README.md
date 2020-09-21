@@ -13,7 +13,6 @@ Download our [Roid.zip](https://github.com/sheikh-haziq/Roid/releases/tag/v1.0),
 
 ```javascript
 app.LoadPlugin('Roid');
-app.LoadPlugin('Roid');
 function OnStart(){
     var Home = app.CreateLayout('Linear','VCenter,FILLXY');
     Home.SetBackColor('#ffffff');
