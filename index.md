@@ -2,7 +2,7 @@
 
 ## Installation
 
-Download our [Roid.zip](https://github.com/sheikh-haziq/Roid/releases/tag/v1.0), extract it and install Roid.apk
+Download our [Roid.zip](https://github.com/webyte-group/Roid/tags), put it in **DroidScript/plugins** folder and restart *DroidScript*.
 
 ## Usage
 
